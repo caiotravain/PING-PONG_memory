@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Tue Nov  7 16:09:39 2023
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : DE10_Standard_Audio
+Top-level Entity Name : DE10_Standard_Audio
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 3906
+Total pins : 168
+Total virtual pins : 0
+Total block memory bits : 2,642,976
+Total DSP Blocks : 3
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 2
+Total DLLs : 0
