@@ -2,9 +2,9 @@
  * linker.h - Linker script mapping information
  *
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'audio_nios'
- * SOPC Builder design path: ../../audio_nios.sopcinfo
+ * SOPC Builder design path: ../../../DE10_Standard_Audio_2/audio_nios.sopcinfo
  *
- * Generated: Tue Jan 17 14:50:04 CST 2017
+ * Generated: Tue Nov 28 19:05:07 BRST 2023
  */
 
 /*
@@ -65,12 +65,16 @@
  *
  */
 
-#define ONCHIP_MEMORY2_REGION_BASE 0x5080020
-#define ONCHIP_MEMORY2_REGION_SPAN 319968
-#define RESET_REGION_BASE 0x5080000
+#define DADOS_2_REGION_BASE 0x1249f0
+#define DADOS_2_REGION_SPAN 10000
+#define DADOS_REGION_BASE 0xa49f0
+#define DADOS_REGION_SPAN 10000
+#define ONCHIP_MEMORY2_REGION_BASE 0x100020
+#define ONCHIP_MEMORY2_REGION_SPAN 149968
+#define ONCHIP_MEMORY_0_REGION_BASE 0x80000
+#define ONCHIP_MEMORY_0_REGION_SPAN 150000
+#define RESET_REGION_BASE 0x100000
 #define RESET_REGION_SPAN 32
-#define SDRAM_REGION_BASE 0x0
-#define SDRAM_REGION_SPAN 67108864
 
 
 /*

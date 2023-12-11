@@ -1,0 +1,151 @@
+// --------------------------------------------------------------------
+// Copyright (c) 2010 by Terasic Technologies Inc.
+// --------------------------------------------------------------------
+//
+// Permission:
+//
+//   Terasic grants permission to use and modify this code for use
+//   in synthesis for all Terasic Development Boards and Altera Development
+//   Kits made by Terasic.  Other use of this code, including the selling
+//   ,duplication, or modification of any portion is strictly prohibited.
+//
+// Disclaimer:
+//
+//   This VHDL/Verilog or C/C++ source code is intended as a design reference
+//   which illustrates how these types of functions can be implemented.
+//   It is the user's responsibility to verify their design for
+//   consistency and functionality through the use of formal
+//   verification methods.  Terasic provides no warranty regarding the use
+//   or functionality of this code.
+//
+// --------------------------------------------------------------------
+//
+//                     Terasic Technologies Inc
+//                     356 Fu-Shin E. Rd Sec. 1. JhuBei City,
+//                     HsinChu County, Taiwan
+//                     302
+//
+//                     web: http://www.terasic.com/
+//                     email: support@terasic.com
+//
+// --------------------------------------------------------------------
+
+/*
+ * Function:
+ *      Audio record and Play
+ *
+ * Human Machine Interface:
+ *      KEY3: Record Start/Stop (Auto Stop when buffer is full)
+ *      KEY2: Play Start/Stop (Audo Stop when no data to play)
+ *      SEG7: Display the duration of recording/playing
+ *      LED:  Display the singal strength.
+ *      SW0:  Audio Source Selection: DOWN-->MIC, UP-->LINE-IN
+ *      SW1:  MIC Boost Control when audio source is MIC. DOWN-->BOOST OFF UP-->BOSST ON
+ *      SW2:  Zero-Cross detect for Playing: DOWN-->OFF, UP-->ON
+ *      SW5/SW4/SW3: Sample Rate Control:
+ *                    DOWN/DOWN/DOWN-->96K
+ *                    DOWN/DOWN/UP->48K,
+ *                    DOWN/UP/DOWN->44.1K,
+ *                    DOWN/UP/UP->32K,
+ *                    UP/DOWN/DOWN->8K
+ *
+ * CONFIGURATION:
+ *      SDRAM: used to store record audio signal
+ *      on-chip memory: used to store Nios II program
+ *
+ * Revision:
+ *      V1.0, 11/21/2007, init by Richard.
+ *      V1.01 21/5 /2010
+ *
+ * Compatibility:
+ *      Quartus 13.0
+ *      DE1_SoC Board
+ */
+
+
+#include <math.h>
+#include <assert.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdint.h>
+#include <time.h>
+#include "system.h"
+
+
+#include <sys/alt_cache.h>
+
+int main()
+{
+
+//#define DADOS_2_REGION_BASE 0xe49f0
+//#define DADOS_2_REGION_SPAN 10000
+//#define DADOS_REGION_BASE 0xa49f0
+//#define DADOS_REGION_SPAN 10000
+    volatile unsigned int *mem1 = (unsigned int *)0xe49f0;
+    volatile unsigned int *mem2 = (unsigned int *)0xa49f0;
+
+
+//    // Data to be written to the specified memory address
+    unsigned int data = 1;
+//
+//    // Write data to the specified memory address
+//    *mem1 = data;
+
+    int i = 0;
+	int vai = 0;
+	int process = 1; // 0  e o leitor e 1 o gravador
+	*mem1 = 0xFFFFFFF0;
+	*mem2 = 0xFFFFFFF0;
+	int memory1 = 0;
+	int memory2 = 0;
+    // Print the processor ID
+    while(1){
+//    	*mem1 = i;
+    	alt_dcache_flush_all();
+    	int i = 0;
+    	if (*mem1 == 0xFFFFFFF0){
+    		memory1 = 1;
+    	}
+    	if (*mem2 == 0xFFFFFFF0){
+    	    memory2 = 1;
+    	 }
+
+    	while (memory1){
+
+			if (mem1 >= 0xE7100){
+				mem1 = 0xe49f0;
+				*mem1 = 0xFFFFFFFF;
+				alt_dcache_flush_all();
+				memory1 = 0;
+				i = 0;
+			}
+			else{
+				*mem1 = data;
+				alt_dcache_flush_all();
+				mem1 ++;
+				i++;
+				data ++;
+			}
+    	}
+    	while (memory2){
+
+			if (mem2 >= 0xA7100){
+				mem2 = 0xa49f0;
+				*mem2 = 0xFFFFFFFF;
+				alt_dcache_flush_all();
+				memory2 = 0;
+				i = 0;
+			}
+			else{
+				*mem2 = data;
+				alt_dcache_flush_all();
+				mem2 ++;
+				i++;
+				data ++;
+			}
+    	}
+
+    }
+    return 0;
+}
+

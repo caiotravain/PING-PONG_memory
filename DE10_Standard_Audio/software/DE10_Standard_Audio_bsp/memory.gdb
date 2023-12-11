@@ -1,9 +1,9 @@
 # memory.gdb - GDB memory region definitions
 #
 # Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'audio_nios'
-# SOPC Builder design path: ../../audio_nios.sopcinfo
+# SOPC Builder design path: ../../../DE10_Standard_Audio_2/audio_nios.sopcinfo
 #
-# Generated: Tue Jan 03 16:42:14 CST 2017
+# Generated: Tue Nov 28 19:05:07 BRST 2023
 
 # DO NOT MODIFY THIS FILE
 #
@@ -46,8 +46,8 @@
 # The cache attribute is specified which improves GDB performance
 # by allowing GDB to cache memory contents on the host.
 
-# sdram
-memory 0x0 0x4000000 cache
+# onchip_memory_0
+memory 0x80000 0xa7100 cache
 
 # onchip_memory2
-memory 0x5080000 0x50ce200 cache
+memory 0x100000 0x127100 cache

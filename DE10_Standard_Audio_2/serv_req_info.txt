@@ -1,0 +1,74 @@
+<internal_error>
+<sub_system>ERR</sub_system>
+<callstack>
+	0x7f96e74c7171: ccl_err + 0x8171 (_ZN15ERR_STACKWALKER15get_stack_traceEPPKviiPv + 0xb1)
+	0x7f96e74ca015: ccl_err + 0xb015 (_Z14err_terminatorv + 0x4b)
+	0x7f96e2793796: stdc++.so.6 + 0x63796 (_ZN10__cxxabiv111__terminateEPFvvE + 0x6)
+	0x7f96e2792859: stdc++.so.6 + 0x62859
+	0x7f96e279340a: stdc++.so.6 + 0x6340a (__gxx_personality_v0 + 0x52a)
+	0x7f96e1f7dc03: gcc_s.so.1 + 0xfc03 (_Unwind_RaiseException_Phase2 + 0x43)
+	0x7f96e1f7e137: gcc_s.so.1 + 0x10137 (_Unwind_Resume + 0x57)
+	0x7f96cf926f76: cbx_mgl + 0x58f76 (_ZN13MGL_GENERATOR6removeEP11MGL_ELEMENTRKSsb + 0x350)
+	0x7f96cf927096: cbx_mgl + 0x59096 (_ZN11MGL_ELEMENTD1Ev + 0x30)
+	0x7f96cf9287f4: cbx_mgl + 0x5a7f4 (_ZN20MGL_PARAMETER_STRINGD2Ev + 0xc4)
+	0x7f96cd5219c7: cbx_altsyncram + 0x489c7 (_ZN14CBX_ALTSYNCRAMD1Ev + 0x401)
+	0x7f96cd5222b7: cbx_altsyncram + 0x492b7 (_ZN14CBX_ALTSYNCRAMD0Ev + 0x9)
+	0x7f96cd4f41b8: cbx_altsyncram + 0x1b1b8 (cbx_destroy_generator + 0xf)
+	0x7f971c3ece2d: synth_cbxi + 0x7e2d (_ZN18CBXI_DLL_INTERFACE19disconnect_from_dllEv + 0x10f)
+	0x7f971c3f31dd: synth_cbxi + 0xe1dd (_ZN18CBXI_DLL_INTERFACED1Ev + 0xd)
+	0x7f96e1bc0605: c.so.6 + 0x43605 (__cxa_finalize + 0xf5)
+	0x7f971c3ec7e3: synth_cbxi + 0x77e3
+	0x7f97229f2d13: ld-linux-x86-64.so.2 + 0x10d13
+	0x7f96e1bc0031: c.so.6 + 0x43031
+	0x7f96e1bc012a: c.so.6 + 0x4312a
+	0x7f97087cde8a: ccl_ipc + 0x3e8a (ipc_signal_handler + 0xe7)
+	0x7f96e1bbbf10: c.so.6 + 0x3ef10
+	0x7f96cf9734bb: cbx_mgl + 0xa54bb (_ZN13MGL_GENERATOR32assign_parameter_values_to_sliceEi + 0x69)
+	0x7f96cf973cd4: cbx_mgl + 0xa5cd4 (_ZN13MGL_PARAMETER28parameter_assign_error_checkERKSs + 0x666)
+	0x7f96cf973d68: cbx_mgl + 0xa5d68 (_ZN21MGL_PARAMETER_INTEGERaSEi + 0x2c)
+	0x7f96cf970f59: cbx_mgl + 0xa2f59 (_ZN13MGL_GENERATOR25assign_value_to_parameterERKSsS1_ + 0xd9)
+	0x7f96cf973514: cbx_mgl + 0xa5514 (_ZN13MGL_GENERATOR32assign_parameter_values_to_sliceEi + 0xc2)
+	0x7f96cf97724d: cbx_mgl + 0xa924d (_ZN13MGL_GENERATOR13create_slicesEv + 0x39)
+	0x7f96cf9775e5: cbx_mgl + 0xa95e5 (_ZN13MGL_GENERATORixEi + 0x381)
+	0x7f96cdc6e99b: cbx_stratixv + 0x1099b (_ZN19CBX_STRATIXV_LUTRAMixEi + 0x9)
+	0x7f96cd57d9d1: cbx_altsyncram + 0xa49d1 (_Z22create_stratixv_lutramP20CBX_LUTRAM_INTERFACE + 0x1bc8)
+	0x7f96cd5847e8: cbx_altsyncram + 0xab7e8 (_Z13create_lutramP20CBX_LUTRAM_INTERFACE + 0x1c4)
+	0x7f96cd52ed67: cbx_altsyncram + 0x55d67 (_ZN14CBX_ALTSYNCRAM30implement_new_lutram_sp_commonEv + 0x907)
+	0x7f96cd53142b: cbx_altsyncram + 0x5842b (_ZN14CBX_ALTSYNCRAM21implement_stratixv_spEv + 0xff)
+	0x7f96cd51c8be: cbx_altsyncram + 0x438be (_ZN14CBX_ALTSYNCRAM8rtl_bodyERSo + 0x1dd6)
+	0x7f96cf987377: cbx_mgl + 0xb9377 (_ZN13MGL_GENERATOR18generate_subdesignERSo + 0x267d)
+	0x7f96cd4f41ce: cbx_altsyncram + 0x1b1ce (cbx_generate_hdl + 0x10)
+	0x7f971c3ee44c: synth_cbxi + 0x944c (_ZN18CBXI_DLL_INTERFACE12generate_hdlEP17HDB_INSTANCE_NAME + 0x136)
+	0x7f971c3f267d: synth_cbxi + 0xd67d (_ZN12CBXI_MANAGER13generate_codeERK8FIO_PATHRK9CBXI_INFO + 0x12b3)
+	0x7f971c3f30de: synth_cbxi + 0xe0de (_Z12cbxi_processRK8FIO_PATHRK9CBXI_INFO + 0x9)
+	0x7f971f825bd1: synth_sgn + 0x13ebd1 (_ZN13SGN_CLEAR_BOX7processEP10HDB_ENTITYP17HDB_INSTANCE_NAMEP16SGN_WRAPPER_INFO + 0x401)
+	0x7f971f82623e: synth_sgn + 0x13f23e (_ZN13SGN_EXTRACTOR26regenerate_clearbox_entityEP10HDB_ENTITYP17HDB_INSTANCE_NAMEP16SGN_WRAPPER_INFO + 0xbe)
+	0x7f971f87518a: synth_sgn + 0x18e18a (_ZN13SGN_EXTRACTOR20recursive_extractionEP17HDB_INSTANCE_NAMEP16SGN_WRAPPER_INFOPKc + 0x6a)
+	0x7f971f8762d6: synth_sgn + 0x18f2d6 (_ZN13SGN_EXTRACTOR36recurse_into_newly_extracted_netlistEP10HDB_ENTITYP17HDB_INSTANCE_NAMEmP16SGN_WRAPPER_INFO + 0x546)
+	0x7f971f8753fc: synth_sgn + 0x18e3fc (_ZN13SGN_EXTRACTOR20recursive_extractionEP17HDB_INSTANCE_NAMEP16SGN_WRAPPER_INFOPKc + 0x2dc)
+	0x7f971f8762d6: synth_sgn + 0x18f2d6 (_ZN13SGN_EXTRACTOR36recurse_into_newly_extracted_netlistEP10HDB_ENTITYP17HDB_INSTANCE_NAMEmP16SGN_WRAPPER_INFO + 0x546)
+	0x7f971f8753fc: synth_sgn + 0x18e3fc (_ZN13SGN_EXTRACTOR20recursive_extractionEP17HDB_INSTANCE_NAMEP16SGN_WRAPPER_INFOPKc + 0x2dc)
+	0x7f971f8762d6: synth_sgn + 0x18f2d6 (_ZN13SGN_EXTRACTOR36recurse_into_newly_extracted_netlistEP10HDB_ENTITYP17HDB_INSTANCE_NAMEmP16SGN_WRAPPER_INFO + 0x546)
+	0x7f971f8753fc: synth_sgn + 0x18e3fc (_ZN13SGN_EXTRACTOR20recursive_extractionEP17HDB_INSTANCE_NAMEP16SGN_WRAPPER_INFOPKc + 0x2dc)
+	0x7f971f87b5e3: synth_sgn + 0x1945e3 (_ZN13SGN_EXTRACTOR7extractEv + 0x3a3)
+	0x7f971f88bf70: synth_sgn + 0x1a4f70 (_Z12sgn_qic_fullP10CMP_FACADERSt6vectorISsSaISsEERS1_IdSaIdEE + 0x440)
+	   0x41c3b9: quartus_map + 0x1c3b9 (_Z16qsyn_execute_sgnP10CMP_FACADERSt6vectorISsSaISsEERKSsP14THR_NAMED_PIPES8_ + 0x159)
+	   0x437d61: quartus_map + 0x37d61 (_ZN14QSYN_FRAMEWORK12execute_coreEP14THR_NAMED_PIPES1_ + 0x231)
+	   0x43bcec: quartus_map + 0x3bcec (_ZN14QSYN_FRAMEWORK7executeEv + 0xc4c)
+	0x7f970b53475b: comp_qexe + 0x1c75b (_Z18qexe_standard_mainP14QEXE_FRAMEWORKPPK22QEXE_OPTION_DEFINITIONiPPKc + 0x888)
+	   0x43025c: quartus_map + 0x3025c (_Z9qsyn_mainiPPKc + 0x13c)
+	0x7f96e9d31720: ccl_msg + 0x40720 (_Z15msg_main_threadPv + 0x10)
+	0x7f96e708902c: ccl_thr + 0x602c (thr_final_wrapper + 0xc)
+	0x7f96e9d317df: ccl_msg + 0x407df (_Z18msg_thread_wrapperPFPvS_ES_ + 0x62)
+	0x7f96e76fa559: ccl_mem + 0xa559 (_Z18mem_thread_wrapperPFPvS_ES_ + 0x99)
+	0x7f96e74c7f92: ccl_err + 0x8f92 (_Z18err_thread_wrapperPFPvS_ES_ + 0x27)
+	0x7f96e70893f2: ccl_thr + 0x63f2 (thr_thread_wrapper + 0x15)
+	0x7f96e9d337e2: ccl_msg + 0x427e2 (_Z12msg_exe_mainiPPKcPFiiS1_E + 0xa3)
+	0x7f96e1b9ec87: c.so.6 + 0x21c87 (__libc_start_main + 0xe7)
+	   0x415545: quartus_map + 0x15545
+</callstack>
+<error>*** Fatal Error: Unhandled Exception</error>
+<date>Tue Nov 28 17:42:17 2023
+</date>
+<version>Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition</version>
+</internal_error>

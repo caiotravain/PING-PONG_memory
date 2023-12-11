@@ -7,7 +7,9 @@
 <stringAttribute key="byteStreamDeviceInstanceID" value="0"/>
 <stringAttribute key="com.altera.sbtgui.launch.REMOTE_PORT" value="36961"/>
 <booleanAttribute key="downloadProgram" value="true"/>
-<stringAttribute key="elfFile" value="/media/soc/new/DE10-Standard-v.1.3.0-SystemCD/Demonstration/FPGA/DE10_Standard_Audio/software/DE10_Standard_Audio/DE10_Standard_Audio.elf"/>
+<stringAttribute key="elfFile" value="/media/soc/new/DE10-Standard-v.1.3.0-SystemCD/Demonstration/FPGA/Audio_Filter-NIOS/DE10_Standard_Audio/software/DE10_Standard_Audio/DE10_Standard_Audio.elf"/>
+<stringAttribute key="elfUserFile" value="/media/soc/new/DE10-Standard-v.1.3.0-SystemCD/Demonstration/FPGA/Audio_Filter-NIOS/DE10_Standard_Audio/software/DE10_Standard_Audio/DE10_Standard_Audio.elf"/>
+<booleanAttribute key="enableElfUserFile" value="true"/>
 <stringAttribute key="org.eclipse.cdt.debug.mi.core.GDB_INIT" value=""/>
 <stringAttribute key="org.eclipse.cdt.debug.mi.core.commandFactory" value="com.altera.debug.cdi.gdb.plugin.Nios2GDBServerCommandFactory"/>
 <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_ID" value="com.altera.debug.cdi.gdb.plugin.Nios2GdbCdiDebugger"/>

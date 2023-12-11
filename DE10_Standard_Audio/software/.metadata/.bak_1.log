@@ -1,4 +1,4 @@
-!SESSION 2023-11-16 16:48:24.659 -----------------------------------------------
+!SESSION 2023-11-28 17:20:18.065 -----------------------------------------------
 eclipse.buildId=4.5.2.M20160212-1500
 java.version=1.8.0_05
 java.vendor=Oracle Corporation
@@ -6,10 +6,10 @@ BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization /home/soc/intelFPGA_lite/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
 Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization /home/soc/intelFPGA_lite/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
 
-This is a continuation of log file /media/soc/new/DE10-Standard-v.1.3.0-SystemCD/Demonstration/FPGA/DE10_Standard_Audio/software/.metadata/.bak_0.log
-Created Time: 2023-11-16 18:59:24.410
+This is a continuation of log file /media/soc/new/DE10-Standard-v.1.3.0-SystemCD/Demonstration/FPGA/Audio_Filter-NIOS/DE10_Standard_Audio/software/.metadata/.bak_0.log
+Created Time: 2023-11-28 17:28:26.264
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-16 18:59:24.410
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-28 17:28:26.264
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -290,32 +290,16 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at com.altera.sbtgui.launch.Activator.log(Activator.java:155)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate$2.createProcess(Nios2HardwareLaunchDelegate.java:452)
-	at com.altera.utilities.AlteraNativeLauncher.getProcess(AlteraNativeLauncher.java:309)
-	at com.altera.sbtgui.core.commandline.Executor.getProcess(Executor.java:162)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.getProcess(Nios2HardwareLaunchDelegate.java:475)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.stopProcessorProcess(Nios2HardwareLaunchDelegate.java:533)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:105)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:122)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-16 18:59:24.410
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-28 17:28:26.267
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -608,32 +592,16 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at com.altera.sbtgui.launch.Activator.log(Activator.java:155)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate$2.createProcess(Nios2HardwareLaunchDelegate.java:452)
-	at com.altera.utilities.AlteraNativeLauncher.getProcess(AlteraNativeLauncher.java:309)
-	at com.altera.sbtgui.core.commandline.Executor.getProcess(Executor.java:162)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.getProcess(Nios2HardwareLaunchDelegate.java:475)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.stopProcessorProcess(Nios2HardwareLaunchDelegate.java:533)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:105)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:122)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-16 18:59:24.411
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-28 17:28:26.268
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -938,32 +906,16 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at com.altera.sbtgui.launch.Activator.log(Activator.java:155)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate$2.createProcess(Nios2HardwareLaunchDelegate.java:452)
-	at com.altera.utilities.AlteraNativeLauncher.getProcess(AlteraNativeLauncher.java:309)
-	at com.altera.sbtgui.core.commandline.Executor.getProcess(Executor.java:162)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.getProcess(Nios2HardwareLaunchDelegate.java:475)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.stopProcessorProcess(Nios2HardwareLaunchDelegate.java:533)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:105)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:122)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-16 18:59:24.427
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-28 17:28:26.269
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -1280,32 +1232,16 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at com.altera.sbtgui.launch.Activator.log(Activator.java:155)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate$2.createProcess(Nios2HardwareLaunchDelegate.java:452)
-	at com.altera.utilities.AlteraNativeLauncher.getProcess(AlteraNativeLauncher.java:309)
-	at com.altera.sbtgui.core.commandline.Executor.getProcess(Executor.java:162)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.getProcess(Nios2HardwareLaunchDelegate.java:475)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.stopProcessorProcess(Nios2HardwareLaunchDelegate.java:533)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:105)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:122)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-16 18:59:24.428
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-28 17:28:26.301
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -1634,32 +1570,16 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at com.altera.sbtgui.launch.Activator.log(Activator.java:155)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate$2.createProcess(Nios2HardwareLaunchDelegate.java:452)
-	at com.altera.utilities.AlteraNativeLauncher.getProcess(AlteraNativeLauncher.java:309)
-	at com.altera.sbtgui.core.commandline.Executor.getProcess(Executor.java:162)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.getProcess(Nios2HardwareLaunchDelegate.java:475)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.stopProcessorProcess(Nios2HardwareLaunchDelegate.java:533)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:105)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:122)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-16 18:59:24.434
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-28 17:28:26.302
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -2000,32 +1920,16 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at com.altera.sbtgui.launch.Activator.log(Activator.java:155)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate$2.createProcess(Nios2HardwareLaunchDelegate.java:452)
-	at com.altera.utilities.AlteraNativeLauncher.getProcess(AlteraNativeLauncher.java:309)
-	at com.altera.sbtgui.core.commandline.Executor.getProcess(Executor.java:162)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.getProcess(Nios2HardwareLaunchDelegate.java:475)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.stopProcessorProcess(Nios2HardwareLaunchDelegate.java:533)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:105)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:122)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-16 18:59:24.434
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-28 17:28:26.304
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -2378,32 +2282,16 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at com.altera.sbtgui.launch.Activator.log(Activator.java:155)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate$2.createProcess(Nios2HardwareLaunchDelegate.java:452)
-	at com.altera.utilities.AlteraNativeLauncher.getProcess(AlteraNativeLauncher.java:309)
-	at com.altera.sbtgui.core.commandline.Executor.getProcess(Executor.java:162)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.getProcess(Nios2HardwareLaunchDelegate.java:475)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.stopProcessorProcess(Nios2HardwareLaunchDelegate.java:533)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:105)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:122)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-16 18:59:24.435
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-28 17:28:26.313
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -2768,32 +2656,16 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at com.altera.sbtgui.launch.Activator.log(Activator.java:155)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate$2.createProcess(Nios2HardwareLaunchDelegate.java:452)
-	at com.altera.utilities.AlteraNativeLauncher.getProcess(AlteraNativeLauncher.java:309)
-	at com.altera.sbtgui.core.commandline.Executor.getProcess(Executor.java:162)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.getProcess(Nios2HardwareLaunchDelegate.java:475)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.stopProcessorProcess(Nios2HardwareLaunchDelegate.java:533)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:105)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:122)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-16 18:59:24.436
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-28 17:28:26.318
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -3170,32 +3042,16 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at com.altera.sbtgui.launch.Activator.log(Activator.java:155)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate$2.createProcess(Nios2HardwareLaunchDelegate.java:452)
-	at com.altera.utilities.AlteraNativeLauncher.getProcess(AlteraNativeLauncher.java:309)
-	at com.altera.sbtgui.core.commandline.Executor.getProcess(Executor.java:162)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.getProcess(Nios2HardwareLaunchDelegate.java:475)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.stopProcessorProcess(Nios2HardwareLaunchDelegate.java:533)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:105)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:122)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-16 18:59:24.437
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-28 17:28:26.324
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -3584,32 +3440,16 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at com.altera.sbtgui.launch.Activator.log(Activator.java:155)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate$2.createProcess(Nios2HardwareLaunchDelegate.java:452)
-	at com.altera.utilities.AlteraNativeLauncher.getProcess(AlteraNativeLauncher.java:309)
-	at com.altera.sbtgui.core.commandline.Executor.getProcess(Executor.java:162)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.getProcess(Nios2HardwareLaunchDelegate.java:475)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.stopProcessorProcess(Nios2HardwareLaunchDelegate.java:533)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:105)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:122)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-16 18:59:24.437
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-28 17:28:26.326
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -4010,32 +3850,16 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at com.altera.sbtgui.launch.Activator.log(Activator.java:155)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate$2.createProcess(Nios2HardwareLaunchDelegate.java:452)
-	at com.altera.utilities.AlteraNativeLauncher.getProcess(AlteraNativeLauncher.java:309)
-	at com.altera.sbtgui.core.commandline.Executor.getProcess(Executor.java:162)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.getProcess(Nios2HardwareLaunchDelegate.java:475)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.stopProcessorProcess(Nios2HardwareLaunchDelegate.java:533)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:105)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:122)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-16 18:59:24.438
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-28 17:28:26.329
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -4448,32 +4272,16 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at com.altera.sbtgui.launch.Activator.log(Activator.java:155)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate$2.createProcess(Nios2HardwareLaunchDelegate.java:452)
-	at com.altera.utilities.AlteraNativeLauncher.getProcess(AlteraNativeLauncher.java:309)
-	at com.altera.sbtgui.core.commandline.Executor.getProcess(Executor.java:162)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.getProcess(Nios2HardwareLaunchDelegate.java:475)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.stopProcessorProcess(Nios2HardwareLaunchDelegate.java:533)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:105)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:122)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-16 18:59:24.439
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-28 17:28:26.331
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -4898,32 +4706,16 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at com.altera.sbtgui.launch.Activator.log(Activator.java:155)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate$2.createProcess(Nios2HardwareLaunchDelegate.java:452)
-	at com.altera.utilities.AlteraNativeLauncher.getProcess(AlteraNativeLauncher.java:309)
-	at com.altera.sbtgui.core.commandline.Executor.getProcess(Executor.java:162)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.getProcess(Nios2HardwareLaunchDelegate.java:475)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.stopProcessorProcess(Nios2HardwareLaunchDelegate.java:533)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:105)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:122)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-16 18:59:24.440
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-28 17:28:26.333
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -5360,32 +5152,16 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at com.altera.sbtgui.launch.Activator.log(Activator.java:155)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate$2.createProcess(Nios2HardwareLaunchDelegate.java:452)
-	at com.altera.utilities.AlteraNativeLauncher.getProcess(AlteraNativeLauncher.java:309)
-	at com.altera.sbtgui.core.commandline.Executor.getProcess(Executor.java:162)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.getProcess(Nios2HardwareLaunchDelegate.java:475)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.stopProcessorProcess(Nios2HardwareLaunchDelegate.java:533)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:105)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:122)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-16 18:59:24.440
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-28 17:28:26.335
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -5834,32 +5610,16 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at com.altera.sbtgui.launch.Activator.log(Activator.java:155)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate$2.createProcess(Nios2HardwareLaunchDelegate.java:452)
-	at com.altera.utilities.AlteraNativeLauncher.getProcess(AlteraNativeLauncher.java:309)
-	at com.altera.sbtgui.core.commandline.Executor.getProcess(Executor.java:162)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.getProcess(Nios2HardwareLaunchDelegate.java:475)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.stopProcessorProcess(Nios2HardwareLaunchDelegate.java:533)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:105)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:122)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-16 18:59:24.456
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-28 17:28:26.337
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -6320,32 +6080,16 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at com.altera.sbtgui.launch.Activator.log(Activator.java:155)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate$2.createProcess(Nios2HardwareLaunchDelegate.java:452)
-	at com.altera.utilities.AlteraNativeLauncher.getProcess(AlteraNativeLauncher.java:309)
-	at com.altera.sbtgui.core.commandline.Executor.getProcess(Executor.java:162)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.getProcess(Nios2HardwareLaunchDelegate.java:475)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.stopProcessorProcess(Nios2HardwareLaunchDelegate.java:533)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:105)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:122)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-16 18:59:24.457
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-28 17:28:26.345
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -6818,32 +6562,16 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at com.altera.sbtgui.launch.Activator.log(Activator.java:155)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate$2.createProcess(Nios2HardwareLaunchDelegate.java:452)
-	at com.altera.utilities.AlteraNativeLauncher.getProcess(AlteraNativeLauncher.java:309)
-	at com.altera.sbtgui.core.commandline.Executor.getProcess(Executor.java:162)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.getProcess(Nios2HardwareLaunchDelegate.java:475)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.stopProcessorProcess(Nios2HardwareLaunchDelegate.java:533)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:105)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:122)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-16 18:59:24.458
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-28 17:28:26.376
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -7328,32 +7056,16 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at com.altera.sbtgui.launch.Activator.log(Activator.java:155)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate$2.createProcess(Nios2HardwareLaunchDelegate.java:452)
-	at com.altera.utilities.AlteraNativeLauncher.getProcess(AlteraNativeLauncher.java:309)
-	at com.altera.sbtgui.core.commandline.Executor.getProcess(Executor.java:162)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.getProcess(Nios2HardwareLaunchDelegate.java:475)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.stopProcessorProcess(Nios2HardwareLaunchDelegate.java:533)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:105)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:122)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-16 18:59:24.459
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-28 17:28:26.378
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -7850,32 +7562,16 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at com.altera.sbtgui.launch.Activator.log(Activator.java:155)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate$2.createProcess(Nios2HardwareLaunchDelegate.java:452)
-	at com.altera.utilities.AlteraNativeLauncher.getProcess(AlteraNativeLauncher.java:309)
-	at com.altera.sbtgui.core.commandline.Executor.getProcess(Executor.java:162)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.getProcess(Nios2HardwareLaunchDelegate.java:475)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.stopProcessorProcess(Nios2HardwareLaunchDelegate.java:533)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:105)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:122)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-16 18:59:24.460
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-28 17:28:26.380
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -8384,32 +8080,16 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at com.altera.sbtgui.launch.Activator.log(Activator.java:155)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate$2.createProcess(Nios2HardwareLaunchDelegate.java:452)
-	at com.altera.utilities.AlteraNativeLauncher.getProcess(AlteraNativeLauncher.java:309)
-	at com.altera.sbtgui.core.commandline.Executor.getProcess(Executor.java:162)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.getProcess(Nios2HardwareLaunchDelegate.java:475)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.stopProcessorProcess(Nios2HardwareLaunchDelegate.java:533)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:105)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:122)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-16 18:59:24.461
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-28 17:28:26.382
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -8930,32 +8610,16 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at com.altera.sbtgui.launch.Activator.log(Activator.java:155)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate$2.createProcess(Nios2HardwareLaunchDelegate.java:452)
-	at com.altera.utilities.AlteraNativeLauncher.getProcess(AlteraNativeLauncher.java:309)
-	at com.altera.sbtgui.core.commandline.Executor.getProcess(Executor.java:162)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.getProcess(Nios2HardwareLaunchDelegate.java:475)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.stopProcessorProcess(Nios2HardwareLaunchDelegate.java:533)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:105)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:122)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-16 18:59:24.462
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-28 17:28:26.383
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -9488,32 +9152,16 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at com.altera.sbtgui.launch.Activator.log(Activator.java:155)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate$2.createProcess(Nios2HardwareLaunchDelegate.java:452)
-	at com.altera.utilities.AlteraNativeLauncher.getProcess(AlteraNativeLauncher.java:309)
-	at com.altera.sbtgui.core.commandline.Executor.getProcess(Executor.java:162)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.getProcess(Nios2HardwareLaunchDelegate.java:475)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.stopProcessorProcess(Nios2HardwareLaunchDelegate.java:533)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:105)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:122)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-16 18:59:24.463
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-28 17:28:26.385
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -10058,32 +9706,16 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at com.altera.sbtgui.launch.Activator.log(Activator.java:155)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate$2.createProcess(Nios2HardwareLaunchDelegate.java:452)
-	at com.altera.utilities.AlteraNativeLauncher.getProcess(AlteraNativeLauncher.java:309)
-	at com.altera.sbtgui.core.commandline.Executor.getProcess(Executor.java:162)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.getProcess(Nios2HardwareLaunchDelegate.java:475)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.stopProcessorProcess(Nios2HardwareLaunchDelegate.java:533)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:105)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:122)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-16 18:59:24.464
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-28 17:28:26.387
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -10640,32 +10272,16 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at com.altera.sbtgui.launch.Activator.log(Activator.java:155)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate$2.createProcess(Nios2HardwareLaunchDelegate.java:452)
-	at com.altera.utilities.AlteraNativeLauncher.getProcess(AlteraNativeLauncher.java:309)
-	at com.altera.sbtgui.core.commandline.Executor.getProcess(Executor.java:162)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.getProcess(Nios2HardwareLaunchDelegate.java:475)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.stopProcessorProcess(Nios2HardwareLaunchDelegate.java:533)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:105)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:122)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-16 18:59:24.465
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-28 17:28:26.392
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -11234,32 +10850,16 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at com.altera.sbtgui.launch.Activator.log(Activator.java:155)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate$2.createProcess(Nios2HardwareLaunchDelegate.java:452)
-	at com.altera.utilities.AlteraNativeLauncher.getProcess(AlteraNativeLauncher.java:309)
-	at com.altera.sbtgui.core.commandline.Executor.getProcess(Executor.java:162)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.getProcess(Nios2HardwareLaunchDelegate.java:475)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.stopProcessorProcess(Nios2HardwareLaunchDelegate.java:533)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:105)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:122)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-16 18:59:24.466
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2023-11-28 17:28:26.394
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -11840,25 +11440,9 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at com.altera.sbtgui.launch.Activator.log(Activator.java:155)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate$2.createProcess(Nios2HardwareLaunchDelegate.java:452)
-	at com.altera.utilities.AlteraNativeLauncher.getProcess(AlteraNativeLauncher.java:309)
-	at com.altera.sbtgui.core.commandline.Executor.getProcess(Executor.java:162)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.getProcess(Nios2HardwareLaunchDelegate.java:475)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.stopProcessorProcess(Nios2HardwareLaunchDelegate.java:533)
-	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:105)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:122)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)

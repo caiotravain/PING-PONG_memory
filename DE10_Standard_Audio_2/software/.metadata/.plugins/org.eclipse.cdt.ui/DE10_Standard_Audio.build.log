@@ -1,0 +1,23 @@
+00:38:45 **** Incremental Build of configuration Nios II for project DE10_Standard_Audio ****
+make all 
+Info: Building ../DE10_Standard_Audio_bsp/
+make --no-print-directory -C ../DE10_Standard_Audio_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DE10_Standard_Audio_bsp//HAL/inc -I../DE10_Standard_Audio_bsp/ -I../DE10_Standard_Audio_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:115:11: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+       ptr = 0xe49f0;
+           ^
+Info: Linking DE10_Standard_Audio.elf
+nios2-elf-g++  -T'../DE10_Standard_Audio_bsp//linker.x' -msys-crt0='../DE10_Standard_Audio_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../DE10_Standard_Audio_bsp/   -Wl,-Map=DE10_Standard_Audio.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o DE10_Standard_Audio.elf obj/default/debug.o obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert DE10_Standard_Audio.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name audio_nios --quartus_project_dir "/media/soc/new/DE10-Standard-v.1.3.0-SystemCD/Demonstration/FPGA/Audio_Filter-NIOS/DE10_Standard_Audio_2" --jdi ../..//output_files/DE10_Standard_Audio.jdi --sopcinfo /media/soc/new/DE10-Standard-v.1.3.0-SystemCD/Demonstration/FPGA/Audio_Filter-NIOS/DE10_Standard_Audio_2/software/DE10_Standard_Audio_bsp/../../audio_nios.sopcinfo
+bash: line 0: igncr: invalid option name
+Info: (DE10_Standard_Audio.elf) 74 KBytes program size (code + initialized data).
+Info:                           69 KBytes free for stack + heap.
+Info: Creating DE10_Standard_Audio.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DE10_Standard_Audio.elf >DE10_Standard_Audio.objdump
+[DE10_Standard_Audio build complete]
+
+00:38:47 Build Finished (took 1s.657ms)
+

@@ -1,0 +1,9 @@
+19:15:52 **** Incremental Build of configuration Nios II for project DE10_Standard_Audio ****
+make all 
+Info: Building ../DE10_Standard_Audio_bsp/
+make --no-print-directory -C ../DE10_Standard_Audio_bsp/
+[BSP build complete]
+[DE10_Standard_Audio build complete]
+
+19:15:53 Build Finished (took 374ms)
+
