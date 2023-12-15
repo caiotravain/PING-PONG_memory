@@ -571,7 +571,7 @@ double insamp[ MAX_FLT_LEN ];
 							vector[0] = 0;
 						}
                     	tudo[j] = (convolve(vector,coeffs,MAX_FLT_LEN , MAX_FLT_LEN));
-                    	tudo_meio[j] = (convolve(vector,coeffs_2,MAX_FLT_LEN_2 , MAX_FLT_LEN));
+                    	// tudo_meio[j] = (convolve(vector,coeffs_2,MAX_FLT_LEN_2 , MAX_FLT_LEN));
                     	 j++;
                     	 j = j %2000;
                     }
