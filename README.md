@@ -52,7 +52,7 @@ This project is a simple two-NIOS II project that uses two shared memories and o
 
 
 # Using this in a real project example
-This project was motivated when using the DE10-Standard board and the DE10-Standard Audio project. The DE10-Standard Audio project records the audio in the memory and then plays the audio from the memory. The problem is that i wanted to implement FIR filters in the audio, but the audio was being played while the FIR filter was being calculated. So i needed more time to calculate the FIR filter. So this project was created to solve this, the first NIOS II will record the audio in the memory and the second NIOS II will play the audio from the memory. The second NIOS II will only play the audio when the memory is full. So the first NIOS II will play the audio from the memory and the second NIOS II will calculate the FIR filter. This way the audio will not sutters while the FIR filter is being calculated.
+This project was motivated when using the DE10-Standard board and the DE10-Standard Audio project from Terasic. The DE10-Standard Audio project records the audio in the memory and then plays the audio from the memory. The problem is that i wanted to implement FIR filters in the audio, but the audio was being played while the FIR filter was being calculated. So i needed more time to calculate the FIR filter. So this project was created to solve this, the first NIOS II will record the audio in the memory and the second NIOS II will play the audio from the memory. The second NIOS II will only play the audio when the memory is full. So the first NIOS II will play the audio from the memory and the second NIOS II will calculate the FIR filter. This way the audio will not sutters while the FIR filter is being calculated.
 In the DE10-Standard Audio project in this repository you can see the FIR filter being implemented in a NIOS II and the audio being played while doing the FIR filter. The problem is that the PING PONG MEMORY NIOS project is not implemented in the DE10-Standard Audio project, so the audio will sutters if more than one FIR filter is implemented.
 
 ## How to use in the DE10-Standard Audio project
@@ -71,3 +71,5 @@ A FIR filter is a filter that uses the previous inputs to calculate the output. 
 
 ![alt text](images/fir.png)
 #### Example of a FIR filter of 400 hz
+
+Disclaimer: This project was made on top of the DE10-Standard Audio project from Terasic. The DE10-Standard Audio project from Terasic is a project that records the audio in the memory and then plays the audio from the memory. 
