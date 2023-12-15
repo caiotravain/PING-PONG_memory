@@ -31,6 +31,7 @@ This project is a simple two-NIOS II project that uses two shared memories and o
 ![alt text](images/dados_1.png)
 10. Create a new project for the second NIOS II  and repeat the steps 1 to 9
 11. Get the base address of the shared memories in the linker.h file
+![alt text](images/base_add.png)
 12. Write the code in the main.c to write in the shared memory (check the code in the project -- DE10_Standard_Audio_2\software\DE10_Standard_Audio\main.c)
 13. Write the code in the main.c to read in the shared memory (check the code in the project -- DE10_Standard_Audio_2\software\Parte2\hello_world.c)
 14. Compile the project (Project -> Build All)
@@ -39,8 +40,7 @@ This project is a simple two-NIOS II project that uses two shared memories and o
 17. Watch the Nios II Console for the results, due to the fact we are saving integers in the memory, the numbers will use 4 bytes of memory. So it will write until 2500 in each memory. You can change the number of bytes that you want to write in the memory in the main.c file using short int, int, long int, etc.
 
 ## changes that you need to do in the code
-1. Change the base address of the shared memory using the one in the linker.h file. (WARNING: Dont change the base address of the shared memory in the linker.h file, just see and change the value in the main.c file -- 0xe49f0 and 0xa49f0 in all the places)
-![alt text](images/base_add.png)
+1. Change the base address of the shared memory using the one in the linker.h file.(step 11) (WARNING: Dont change the base address of the shared memory in the linker.h file, just see and change the value in the main.c file -- 0xe49f0 and 0xa49f0 in all the places)
 ![alt text](images/change.png)
 2. Change the number of bytes that you want to write in the memory in the main.c file using short int, int, long int, etc.
 3. Change the number of bytes that you want to read in the memory in the main.c file using short int, int, long int, etc.
