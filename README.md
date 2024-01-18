@@ -5,7 +5,7 @@
 - **Semester:** 6
 - **Contact:** caiotravain@gmail.com
 - **Year:** 2023
-- **Project github**: https://github.com/caiotravain/Audio_Filter-NIOS
+- **Project github**: https://github.com/caiotravain/PING-PONG_memory
 
 ## Starting
 
@@ -14,7 +14,7 @@ To start this project you will need:
 - **Hardware:** DE10-Standard and accessories
 - **Softwares:** Quartus 18.01
 - **Documents:** [DE10-Standard_User_manual.pdf](https://github.com/Insper/DE10-Standard-v.1.3.0-SystemCD/tree/master/Manual)
-- **Files:** clone this repository https://github.com/caiotravain/Audio_Filter-NIOS and work inside of it
+- **Files:** clone this repository https://github.com/caiotravain/PING-PONG_memory and work inside of it
 
 ## Motivation
 
